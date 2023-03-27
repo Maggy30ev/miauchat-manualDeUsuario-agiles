@@ -11,11 +11,11 @@
 
 <body>
     <div class="">
-        <section class="hero has-background-primary-light is-medium"
+        <section class="hero has-background-primary-light is-medium "
             style="background-image: url(images/background_light_miauChat.svg);">
 
             <!-- Hero content: will be in the middle -->
-            <div class="hero-body">
+            <div class="hero-body ">
                 <div class="is-flex is-justify-content-center pb-3 is-clickable	">
                     <figure class="image is-96x96">
                         <a href="http://143.198.76.61:3146/miauchat/iniciar-sesion" target="_blank">
@@ -35,10 +35,28 @@
             </div>
 
             <!-- Hero footer: will stick at the bottom -->
+            <div class="hero-foot">
+                <div class="tabs is-boxed is-fullwidth">
+                    <div class="container">
+                        <ul>
+                            <li class="is-active">
+                                <a href="">
+                                    <p style="font-weight: bold;color: #00C6E5;">Manual de Usuario</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Manual Técnico
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
         </section>
-        
-        <div class="container pt-6">
+
+        <div id="manual_usuario" class="container pt-6 pb-6">
             <div class="columns">
                 <div class="column is-3">
                     <div class="box">
@@ -47,25 +65,25 @@
                                 Preguntas Frecuentes
                             </p>
                             <ul class="menu-list">
-                                <li><a>¿Que es Miauchat?</a></li>
-                                <li><a>¿Como crear una cuenta?</a></li>
+                                <li><a href="#pf-1">¿Qué es Miauchat?</a></li>
+                                <li><a href="#pf-2">¿Como crear una cuenta?</a></li>
                             </ul>
                             <p class="menu-label has-text-weight-semibold	">
                                 Sesión
                             </p>
                             <ul class="menu-list">
-                                <li><a href="#s1" >Inicio de Sesión</a></li>
-                                <li><a href="#s2" >Crear una cuenta</a></li>
+                                <li><a href="#s1">Inicio de Sesión</a></li>
+                                <li><a href="#s2">Crear una cuenta</a></li>
                             </ul>
                             <p class="menu-label has-text-weight-semibold	">
                                 Salas de chat
                             </p>
                             <ul class="menu-list">
-                                <li><a>Crear una sala de chat</a></li>
-                                <li><a>Unirse a una sala de chat</a></li>
-                                <li><a>Abandonar una sala de chat</a></li>
-                                <li><a>Eliminar una sala de chat</a></li>
-                                <li><a>Modificar nombre de una sala de chat</a></li>
+                                <li><a href="#sc-1">Crear una sala de chat</a></li>
+                                <li><a href="#sc-2">Unirse a una sala de chat</a></li>
+                                <li><a href="#sc-3">Abandonar una sala de chat</a></li>
+                                <li><a href="#sc-4">Eliminar una sala de chat</a></li>
+                                <li><a href="#sc-5">Modificar nombre de una sala de chat</a></li>
                             </ul>
                             <p class="menu-label has-text-weight-semibold">
                                 Mensajes
@@ -85,23 +103,29 @@
                             <div
                                 class="is-flex is-justify-content-center is-flex-direction-column	is-align-items-center">
                                 <p class="title is-3 is-spaced"> Preguntas Frecuentes</p>
-                                <p class=" subtitle is-5 is-italic	">¿Que es Miuchat?</p>
-                                <p class="has-text-justified pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Pellentesque risus mi,
-                                    tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                                    fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac
-                                    eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                    tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula
-                                    et sem eget, facilisis sodales sem.</p>
+                                <p id="pf-1" class=" subtitle is-4	">¿Que es Miuchat?</p>
+                                <p class="has-text-justified pb-6">Es una aplicación de chat web diseñada para
+                                    escritorio que te permite mantenerte conectado con otros usuarios a través de salas
+                                    de chat. Puedes invitar a otros usuarios a unirse a las salas simplemente
+                                    compartiendo un código, lo que hace que sea más rápido y conveniente comenzar a
+                                    comunicarte. Además, no es necesario agregar contactos, ya que cualquier persona con
+                                    una cuenta en la aplicación puede unirse a las salas de chat. Esta función de acceso
+                                    mediante códigos diferencia nuestra aplicación de otras aplicaciones de chat
+                                    existentes.
+                                </p>
 
-                                <p class=" subtitle is-5 is-italic	">¿Como crear una cuenta?</p>
-                                <p class="has-text-justified pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Pellentesque risus mi,
-                                    tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                                    fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac
-                                    eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                    tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula
-                                    et sem eget, facilisis sodales sem.</p>
+                                <p id="pf-2" class=" subtitle is-4">¿Como crear una cuenta?</p>
+                                <p class="has-text-justified pb-6">Para generar una cuenta solo necesitas ingresar a la
+                                    <b><a href="http://143.198.76.61:3146/miauchat/registrarse" target="_blank">página
+                                            de registro</a></b>, rellenar el formulario con tú datos y en
+                                    cuestión de
+                                    segundos
+                                    podrás disfrutar de los beneficios que te da esta aplicación. Para más detalles,
+                                    visita la sección Sesión y en el apartado <b><a href="#s2">Crear cuenta</a></b>
+                                    podrás ver el paso a paso
+                                    para
+                                    poder registrarte.
+                                </p>
                             </div>
                         </div>
                     </article>
@@ -111,25 +135,92 @@
                             <div
                                 class="is-flex is-justify-content-center is-flex-direction-column	is-align-items-center">
                                 <p class="title is-3 is-spaced"> Sesión</p>
-                                <p id="s1" class=" subtitle is-5 is-italic	">Inicio de sesión</p>
-                                <p class="has-text-justified pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Pellentesque risus mi,
-                                    tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                                    fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac
-                                    eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                    tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula
-                                    et sem eget, facilisis sodales sem.</p>
+                                <p id="s1" class=" subtitle is-4	">Inicio de sesión</p>
+                                <div class="container pb-6">
+                                    <p class="has-text-justified pb-5">Para iniciar sesión primero tenemos que
+                                        dirigirnos al siguiente
+                                        <b><a href="http://143.198.76.61:3146/miauchat/iniciar-sesion"
+                                                target="_blank">enlace</a></b> donde podremos ver la
+                                        ventana con el formulario de ingreso, tal y como se muestra en la siguiente
+                                        imagen:
+                                    </p>
+                                    <figure class="image">
+                                        <img src="images/Intrucciones/Login/Login_1.png" alt="pantalla miauIngreso">
+                                        <p class="has-text-centered	">Pantalla ingreso</p>
+                                    </figure>
+                                    <p class="has-text-justified pt-5 pb-5">En el formulario de ingreso, debemos
+                                        ingresar nuestro usuario y contraseña en los campos correspondientes.
+                                        Posteriormente damos clic en el botón <b>Ingresar</b> y nos
+                                        redirigirá a la página principal de la aplicación, tal y como se muestra en la
+                                        siguiente imagen:
+                                    </p>
+                                    <figure class="image">
+                                        <img src="images/Intrucciones/Login/Login_2.gif" alt="pantalla miauIngreso">
+                                        <p class="has-text-centered	">Inicio de sesión correcto</p>
+                                    </figure>
+                                    <p class="has-text-justified pt-5 pb-5">Si ingresamos un usuario o contraseña
+                                        incorrectos, nos mostrará un <b>mensaje de error</b>, en la esquina inferior
+                                        derecha de
+                                        la pantalla, tal y como se muestra en la siguiente imagen:
+                                    </p>
+                                    <figure class="image">
+                                        <img src="images/Intrucciones/Login/Login_error.gif" alt="pantalla miauIngreso">
+                                        <p class="has-text-centered	">Inicio de sesión incorrecto</p>
+                                    </figure>
+                                </div>
+                                <p id="s2" class=" subtitle is-4	">Crear una cuenta</p>
+                                <div class="container">
+                                    <p class="has-text-justified pb-5">Para iniciar sesión primero tenemos que
+                                        dirigirnos al siguiente
+                                        <b><a href="http://143.198.76.61:3146/miauchat/iniciar-sesion"
+                                                target="_blank">enlace</a></b> donde podremos ver la
+                                        ventana con el formulario de ingreso; o bien, podemos dirigirnos a la ventana de
+                                        registro y dar clic en el
+                                        botón <b>¿No tienes una cuenta? Regístrate</b>, tal y como se muestra en la
+                                        siguientes imagenes:
+                                    </p>
+                                    <figure class="image pt-5 pb-5">
+                                        <img src="images/Intrucciones/sign_up/sign_up_1.png" alt="pantalla miauIngreso">
+                                        <p class="has-text-centered	">En el login damos click a la opción: ¿No tienes
+                                            una cuenta? Regístrate</p>
+                                    </figure>
 
-                                <p id="s2" class=" subtitle is-5 is-italic	">Crear una cuenta</p>
-                                <p class="has-text-justified pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Pellentesque risus mi,
-                                    tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                                    fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac
-                                    eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                    tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula
-                                    et sem eget, facilisis sodales sem.</p>
+                                    <figure class="image pt-5 pb-5">
+                                        <img src="images/Intrucciones/sign_up/sign_up_2.png" alt="pantalla miauIngreso">
+                                        <p class="has-text-centered	">Pantalla registro</p>
+                                    </figure>
+                                    <p class="has-text-justified pt-5 pb-5">En la ventana de registro, debemos
+                                        ingresar un nuevo usuario, seleccionar una imagen y contraseña en los campos
+                                        correspondientes.
+                                        Posteriormente damos clic en el botón <b>Registrarse</b> y nos
+                                        redirigirá a la página principal de la aplicación, tal y como se muestra en la
+                                        siguiente imagen:
+                                    </p>
+                                    <figure class="image">
+                                        <img src="images/Intrucciones/sign_up/sing_up_3.gif" alt="pantalla miauIngreso">
+                                        <p class="has-text-centered	">Registro correcto</p>
+                                    </figure>
+
+                                    <div class="content">
+                                        <p class="has-text-justified pt-5 pb-5">Se pueden dar tres casos de error al
+                                            momento de
+                                            registrarse:
+                                        </p>
+                                        <ol cl>
+                                            <li>Ingresemos un usuario que ya existe en el sistema.</li>
+                                            <li>No seleccionar una foto de perfil</li>
+                                            <li>Las contraseñas no coincidan</li>
+                                        </ol>
+                                        <p class="has-text-justified pt-5 pb-5">En el primer caso y segundo caso, nos
+                                            mostrará un
+                                            <b>mensaje de error</b>, en la esquina inferior derecha de
+                                            la pantalla. En el tercer caso, los campos de contraseña se pondrán de color
+                                            rojo y nos mostrará un mensaje de error.
+                                        </p>
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
                     </article>
 
                     <br>
@@ -138,32 +229,162 @@
                             <div
                                 class="is-flex is-justify-content-center is-flex-direction-column	is-align-items-center">
                                 <p class="title is-3 is-spaced"> Salas de chat</p>
-                                <p class=" subtitle is-5 is-italic	">Crear una sala de chat</p>
-                                <p class="has-text-justified pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Pellentesque risus mi,
-                                    tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                                    fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac
-                                    eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                    tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula
-                                    et sem eget, facilisis sodales sem.</p>
 
-                                <p class=" subtitle is-5 is-italic	">Unirse a una sala de chat</p>
-                                <p class="has-text-justified pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Pellentesque risus mi,
-                                    tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                                    fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac
-                                    eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                    tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula
-                                    et sem eget, facilisis sodales sem.</p>
+                                <p id="sc-1" class=" subtitle is-4	">Crear una sala de chat</p>
+                                <div class="container pt-5 pb-6">
+                                    <div class="content">
+                                        <p class="has-text-justified pb-6">Para crear una sala de chat primero debemos
+                                            ingresar con nuestro usuario y contraseña correspondientes. Una vez dentro
+                                            de
+                                            la aplicación realizamos los siguientes pasos, donde el número del paso
+                                            corresponde con los circulos marcados en cada una de las imagenes:
+                                        </p>
 
-                                <p class=" subtitle is-5 is-italic	">Abandonar una sala de chat</p>
-                                <p class="has-text-justified pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Pellentesque risus mi,
-                                    tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                                    fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac
-                                    eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                    tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula
-                                    et sem eget, facilisis sodales sem.</p>
+                                        <ol>
+                                            <li>Seleccionamos el botón de añadir, ubicado en la parte inferior derecha,
+                                                detro de la sección de mensajes.
+                                            </li>
+                                            <figure class="image">
+                                                <img src="images/Intrucciones/crear_sala/crear_sala_1.png"
+                                                    alt="pantalla miauIngreso">
+                                                <p class="has-text-centered	">Botón añadir</p>
+                                            </figure>
+                                            <li>
+                                                Se muestra una ventana emergente. Donde dentro del campo de texto
+                                                debemos ingresar el código de
+                                                la sala.
+                                            </li>
+                                            <li>
+                                                Presionar el botón para crear la sala.
+                                            </li>
+                                            <figure class="image">
+                                                <img src="images/Intrucciones/crear_sala/crear_sala_2.png"
+                                                    alt="pantalla miauIngreso">
+                                                <p class="has-text-centered	">Ventana emergente y botón crear</p>
+                                            </figure>
+                                            <li>
+                                                Se mostrará un mensaje de confirmación en la esquina inferior derecha de
+                                                la
+                                                pantalla.
+                                            </li>
+                                            <figure class="image">
+                                                <img src="images/Intrucciones/crear_sala/crear_sala_3.png"
+                                                    alt="pantalla miauIngreso">
+                                                <p class="has-text-centered	">Mensaje de confirmación</p>
+                                            </figure>
+                                            <li>
+                                                Se mostrará la nueva sala creada en la sección de salas de chat.
+                                            </li>
+                                            <li>
+                                                Al dar click en la sala esta se mostrará del lado derecho de la pantalla
+                                                y podremos visualizar
+                                                el código de acceso a la sala.
+                                            </li>
+                                            <figure class="image">
+                                                <img src="images/Intrucciones/crear_sala/crear_sala_4.png"
+                                                    alt="pantalla miauIngreso">
+                                                <p class="has-text-centered	">Sala creada</p>
+                                            </figure>
+
+                                        </ol>
+
+                                    </div>
+
+                                </div>
+
+
+                                <p id="sc-2" class=" subtitle is-4	">Unirse a una sala de chat</p>
+                                <div class="container pt-5 pb-6">
+                                    <div class="content">
+                                        <p class="has-text-justified pb-6">Para unirse a una sala de chat primero
+                                            debemos
+                                            ingresar con nuestro usuario y contraseña correspondientes. Una vez dentro
+                                            de
+                                            la aplicación realizamos los siguientes pasos, donde el número del paso
+                                            corresponde con los circulos marcados en cada una de las imagenes:
+                                        </p>
+                                        <ol>
+                                            <li>Seleccionamos el botón de añadir, ubicado en la parte inferior derecha,
+                                                detro de la sección de mensajes.
+                                            </li>
+                                            <figure class="image">
+                                                <img src="images/Intrucciones/crear_sala/crear_sala_1.png"
+                                                    alt="pantalla miauIngreso">
+                                                <p class="has-text-centered	">Botón añadir</p>
+                                            </figure>
+                                            <li>Se muestra una ventana donde debemos presionar el enlace para mostrar el
+                                                formulario
+                                                de ingreso a una sala.
+                                            </li>
+                                            <figure class="image">
+                                                <img src="images/Intrucciones/unirse_sala/unirse_sala_1.png"
+                                                    alt="pantalla miauIngreso">
+                                                <p class="has-text-centered	">Ventana emergente</p>
+                                            </figure>
+                                            <li>
+                                                Se muestra una ventana emergente. Donde dentro del campo de texto
+                                                debemos ingresar el código de
+                                                la sala.
+                                            </li>
+                                            <li>
+                                                Presionar el botón para crear la sala.
+                                            </li>
+                                            <figure class="image">
+                                                <img src="images/Intrucciones/unirse_sala/unirse_sala_2.png"
+                                                    alt="pantalla miauIngreso">
+                                                <p class="has-text-centered	">Ventana emergente y botón unirse</p>
+                                            </figure>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <p class=" subtitle is-4	">Abandonar una sala de chat</p>
+                                <div class="container pt-5 pb-6">
+                                    <div class="content">
+                                        <p class="has-text-justified pb-6">Para abandonar una sala de chat primero
+                                            debemos
+                                            ingresar con nuestro usuario y contraseña correspondientes. Una vez dentro
+                                            de
+                                            la aplicación realizamos los siguientes pasos, donde el número del paso
+                                            corresponde con los circulos marcados en cada una de las imagenes:
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                Dentro de la pantalla debemos presionar sobre el chat para abrir la
+                                                interfaz de
+                                                los mensajes.
+                                            </li>
+                                            <li>
+                                                Dentro de la ventana en la parte superior derecha, debemos seleccionar
+                                                el botón
+                                                de opciones.
+                                            </li>
+                                            <li>
+                                                Una vez desplegado el menú de opciones, seleccionamos la opción de
+                                                Abandonar Sala.
+                                            </li>
+                                            <figure class="image">
+                                                <img src="images/Intrucciones/abandonar_sala/abandonar_sala_1.png"
+                                                    alt="pantalla miauIngreso">
+                                                <p class="has-text-centered	">Botón de opciones</p>
+                                            </figure>
+                                            <li>
+                                                Se mostrará una ventana donde podrás elegir a un nuevo usuario como
+                                                administrador de la sala
+                                            </li>
+                                            <li>
+                                                Y luego deberas presionar el botón de Abandonar para aplicar los
+                                                cambios.
+                                            </li>
+                                            <figure class="image">
+                                                <img src="images/Intrucciones/abandonar_sala/abandonar_sala_2.png"
+                                                    alt="pantalla miauIngreso">
+                                                <p class="has-text-centered	">Ventana emergente</p>
+                                            </figure>
+                                        </ol>
+                                    </div>
+                                </div>
+
 
                                 <p class=" subtitle is-5 is-italic	">Eliminar una sala de chat</p>
                                 <p class="has-text-justified pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -219,9 +440,19 @@
 
 
         </div>
+        <footer class="footer has-background-primary-light">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Miauchat</strong> by <a href="https://jgthms.com">Nombre del equipo</a>. The source code is
+                    licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                    is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                </p>
+            </div>
+        </footer>
     </div>
 
-    
+
 
 </body>
 
