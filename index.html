@@ -28,7 +28,7 @@
                     <p class="title is-1">
                         Miauchat
                     </p>
-                    <p class="subtitle is-3">
+                    <p id="titulo-pagina" class="subtitle is-3">
                         Manual de Usuario
                     </p>
                 </div>
@@ -39,14 +39,14 @@
                 <div class="tabs is-boxed is-fullwidth">
                     <div class="container">
                         <ul>
-                            <li class="is-active">
-                                <a href="">
+                            <li id="tab-1" onclick="changeTitle(0)" class="is-active">
+                                <a>
                                     <p style="font-weight: bold;color: #00C6E5;">Manual de Usuario</p>
                                 </a>
                             </li>
-                            <li>
-                                <a href="">
-                                    Manual Técnico
+                            <li id="tab-2" onclick="changeTitle(1)">
+                                <a>
+                                    <p style="font-weight: bold;color: #00C6E5;">Manual Técnico</p>
                                 </a>
                             </li>
                         </ul>
@@ -89,8 +89,8 @@
                                 Mensajes
                             </p>
                             <ul class="menu-list">
-                                <li><a>Enviar un mensaje</a></li>
-                                <li><a>Enviar un archivo adjunto</a></li>
+                                <li><a href="#em-1">Enviar un mensaje</a></li>
+                                <li><a href="#em-2">Enviar un archivo adjunto</a></li>
                             </ul>
                         </aside>
                     </div>
@@ -338,7 +338,7 @@
                                     </div>
                                 </div>
 
-                                <p class=" subtitle is-4	">Abandonar una sala de chat</p>
+                                <p id="sc-3" class=" subtitle is-4	">Abandonar una sala de chat</p>
                                 <div class="container pt-5 pb-6">
                                     <div class="content">
                                         <p class="has-text-justified pb-6">Para abandonar una sala de chat primero
@@ -386,23 +386,76 @@
                                 </div>
 
 
-                                <p class=" subtitle is-5 is-italic	">Eliminar una sala de chat</p>
-                                <p class="has-text-justified pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Pellentesque risus mi,
-                                    tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                                    fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac
-                                    eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                    tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula
-                                    et sem eget, facilisis sodales sem.</p>
+                                <p id="sc-4" class=" subtitle is-4	">Eliminar una sala de chat</p>
+                                <div class="container pt-5 pb-6">
+                                    <div class="content">
+                                        <p class="has-text-justified pb-6">Para eliminar una sala de chat primero
+                                            debemos
+                                            ingresar con nuestro usuario y contraseña correspondientes. Una vez dentro
+                                            de
+                                            la aplicación realizamos los siguientes pasos, donde el número del paso
+                                            corresponde con los circulos marcados en cada una de las imagenes:
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                Dentro de la pantalla debemos presionar sobre el chat para abrir la
+                                                interfaz de
+                                                los mensajes.
+                                            </li>
+                                            <li>
+                                                Dentro de la ventana en la parte superior derecha, debemos seleccionar
+                                                el botón
+                                                de opciones.
+                                            </li>
+                                            <li>
+                                                Una vez desplegado el menú de opciones, seleccionamos la opción de
+                                                Eliminar Sala.
+                                            </li>
+                                            <li>
+                                                Se mostrara una ventana de emergencia, seleccionar el botón de Eliminar
+                                                para dar de baja el chat en la aplicación.
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
 
-                                <p class=" subtitle is-5 is-italic	">Modificar el nombre de una sala de chat</p>
-                                <p class="has-text-justified pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Pellentesque risus mi,
-                                    tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                                    fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac
-                                    eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                    tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula
-                                    et sem eget, facilisis sodales sem.</p>
+
+                                <p id="sc-5" class=" subtitle is-4	">Modificar el nombre de una sala de chat</p>
+                                <div class="container pt-5 pb-6">
+                                    <div class="content">
+                                        <p class="has-text-justified pb-6">Para cambiar el nombre una sala de chat
+                                            primero
+                                            debemos
+                                            ingresar con nuestro usuario y contraseña correspondientes. Una vez dentro
+                                            de
+                                            la aplicación realizamos los siguientes pasos, donde el número del paso
+                                            corresponde con los circulos marcados en cada una de las imagenes:
+                                        </p>
+
+                                        <ol>
+                                            <li>
+                                                Dentro de la pantalla debemos presionar sobre el chat para abrir la
+                                                interfaz de
+                                                los mensajes.
+                                            </li>
+                                            <li>
+                                                Dentro de la ventana en la parte superior derecha, debemos seleccionar
+                                                el botón
+                                                de opciones.
+                                            </li>
+                                            <li>
+                                                Una vez desplegado el menú de opciones, seleccionamos la opción de
+                                                Cabiar nombre de sala.
+                                            </li>
+                                            <li>
+                                                Se muestra una ventana, ingresar el nuevo nombre de la sala en el campo
+                                                de texto y para guardar los cambios presionar el botón Guardar
+                                            </li>
+                                        </ol>
+
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </article>
@@ -413,33 +466,231 @@
                             <div
                                 class="is-flex is-justify-content-center is-flex-direction-column	is-align-items-center">
                                 <p class="title is-3 is-spaced">Mensajes</p>
-                                <p class=" subtitle is-5 is-italic	">Enviar un mensaje</p>
-                                <p class="has-text-justified pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Pellentesque risus mi,
-                                    tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                                    fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac
-                                    eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                    tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula
-                                    et sem eget, facilisis sodales sem.</p>
+                                <p id="em-1" class=" subtitle is-4	">Enviar un mensaje</p>
+                                <div class="container pt-5 pb-6">
+                                    <div class="content">
+                                        <p class="has-text-justified pb-6">Para enviar un mensaje
+                                            primero
+                                            debemos
+                                            estar dentro de una sala, ya sea por ingreso o creación. Una vez dentro
+                                            de
+                                            la sala realizamos los siguientes pasos, donde el número del paso
+                                            corresponde con los circulos marcados en cada una de las imagenes:
+                                        </p>
 
-                                <p class=" subtitle is-5 is-italic	">Enviar un archivo adjunto</p>
-                                <p class="has-text-justified pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Pellentesque risus mi,
-                                    tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                                    fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac
-                                    eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor,
-                                    tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula
-                                    et sem eget, facilisis sodales sem.</p>
+                                        <ol>
+                                            <li>
+                                                Dentro de la venta de la sala en la parte inferior, debemos
+                                                ingresar el contenido del mensaje que deseamos enviar.
+                                            </li>
+                                            <li>
+                                                Una vez escrito el mensaje debemos presionar el icono para enviar el
+                                                mensaje.
+                                            </li>
+                                        </ol>
+
+                                    </div>
+                                </div>
+
+                                <p id="em-2" class=" subtitle is-4	">Enviar un archivo adjunto</p>
+                                <div class="container pt-5 pb-6">
+                                    <div class="content">
+                                        <p class="has-text-justified pb-6">Para enviar un mensaje
+                                            primero
+                                            debemos
+                                            estar dentro de una sala, ya sea por ingreso o creación. Una vez dentro
+                                            de
+                                            la sala realizamos los siguientes pasos, donde el número del paso
+                                            corresponde con los circulos marcados en cada una de las imagenes:
+                                        </p>
+
+                                        <ol>
+                                            <li>
+                                                Dentro de la venta de la sala en la parte inferior, debemos
+                                                dar click en el icono del clip.
+                                            </li>
+                                            <li>
+                                                Una vez hecho esto se abrirá una ventana donde podremos seleccionar un
+                                                archivo de nuestro dispositivo.
+                                            </li>
+                                        </ol>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </article>
-
-
                 </div>
             </div>
-
-
         </div>
+
+        <div id="manual_tecnico" class="container pt-6 pb-6">
+            <div class="columns">
+                <div class="column is-3">
+                    <div class="box">
+                        <aside class="menu">
+                            <p class="menu-label has-text-weight-semibold	">
+                                Generales
+                            </p>
+                            <ul class="menu-list">
+                                <li><a href="#des-1">Descripción</a></li>
+                            </ul>
+                            <p class="menu-label has-text-weight-semibold	">
+                                Instalación y Ejecución
+                            </p>
+                            <ul class="menu-list">
+                                <li><a href="#ie-1">Requerimientos</a></li>
+                                <li><a href="#ie-2">Instalación</a></li>
+                                <li><a href="#ie-3">Ejecución</a></li>
+                            </ul>
+                            <p class="menu-label has-text-weight-semibold	">
+                                Proyecto
+                            </p>
+                            <ul class="menu-list">
+                                <li><a href="#p-1">Frontend miauchat</a></li>
+                                <li><a href="#p-2">Backend miauchat</a></li>
+                            </ul>
+
+                        </aside>
+                    </div>
+                </div>
+
+                <div class="column is-9">
+
+                    <article class="message is-dark p-3 ">
+                        <div class="message-body" style="border: none;">
+                            <div
+                                class="is-flex is-justify-content-center is-flex-direction-column	is-align-items-center">
+
+                                <p class="title is-3 is-spaced">Generales</p>
+                                <p id="des-1" class=" subtitle is-4	">Descripción</p>
+                                <p class="has-text-justified pb-6">MiauChat es un proyecto realizado para la asignatura
+                                    de Desarrollo Ágil de Software impartida en la Universidad Tecnológica de la
+                                    Mixteca.
+                                    El proyecto utiliza la metodología ágil de desarrollo Extreme Programming (XP).
+                                    MiauChat consiste en un
+                                    chat que permite a los usuarios conectarse a un mediante un login en la plataforma
+                                    para poder crear salas de chat y poder
+                                    comunicarse entre ellos.
+
+                                </p>
+                                <p class="title is-3 is-spaced"> Instalación y Ejecución</p>
+                                <p class="has-text-justified pb-6">
+                                    Para la instalación de la aplicación en su sistema operativo previamente es
+                                    necesario contar con los siguientes requerimientos de software.
+                                </p>
+                                <p id="ie-1" class=" subtitle is-4	">Requerimientos</p>
+                                <div class="container pt-5 pb-6">
+                                    <div class="content">
+                                        <p class="has-text-justified">
+
+                                            El proyecto está compuesto por dos partes, el frontend y el backend. El
+                                            frontend
+                                            está desarrollado con React y el backend con Node.js.
+
+                                        </p>
+                                        <ul>
+                                            <li>Versión de <code>Node.js</code> mayor a igual a la v18.0.0.</li>
+                                            <li>Sistema de gestión de paquetes <code>npm</code>.</li>
+                                            <li>Sistema gestor de bases de datos <code>MySql</code>.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <p id="ie-2" class=" subtitle is-4	">Instalación</p>
+                                <div class="container pt-5 pb-6">
+                                    <div class="content">
+                                        <p class="has-text-justified">La aplicación, al estar basada en la web, tiene un
+                                            modelo de trabajo cliente-servidor, el código fuente está disponible desde
+                                            GitHub. Para acceder al código fuente, sigua los siguientes pasos:
+                                        </p>
+                                        <ol>
+                                            <li>Clonar los repositorios:
+                                                <p class="has-text-centered">
+                                                <ul>
+                                                    <li>Frontend: <a
+                                                            href="https://github.com/axlserial/miauchat-frontend-agiles.git"
+                                                            target="_blank">miauchat-frontend-agiles</a>.</li>
+                                                    <li>Backend: <a
+                                                            href="https://github.com/axlserial/miauchat-backend-agiles.git"
+                                                            target="_blank">miauchat-backend-agiles</a>.</li>
+                                                </ul>
+                                                </p>
+                                            </li>
+
+                                            <li>Mediante una terminal acceder a la raíz de las carpetas,
+                                                deberá ejecutar el siguiente comando para instalar las dependencias
+                                                necesarias:
+                                                <code>npm install</code>.
+                                            </li>
+
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <p id="ie-3" class="subtitle is-4">Ejecución</p>
+
+                                <div class="container pt-5 pb-6">
+                                    <div class="content">
+                                        <p class="has-text-justified">Pasos para la ejecución de los scripts encargados
+                                            de la compilación del servidor y cliente de la aplicación.
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                En una terminal, dentro del proyecto <b>miauchat-backend-agiles</b>
+                                                ejecutar
+                                                el siguiente comando: <code>npm run start:dev</code>.
+                                            </li>
+                                            <li>
+                                                De igual manera, dentro del proyecto <b>miauchat-frontend-agiles</b>
+                                                ejecutar el siguiente comando: <code>npm run dev</code>.
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <p class="title is-3 is-spaced"> Proyecto </p>
+                                <p id="p-1" class="subtitle is-4">Frontend miauchat</p>
+                                <div class="container pt-5 pb-6">
+                                    <div class="content">
+                                        <p class="has-text-justified">En esta carpeta se encuentran alojados todos los
+                                            archivos del front-end del cliente, como son las interfaces de usuario, los
+                                            servicios de conexión con el servidor, de las pruebas unitarias y están
+                                            definidas de la siguiente manera.
+                                        </p>
+                                        <ol>
+                                            <li>Clonar los repositorios:
+                                                <p class="has-text-centered">
+                                                <ul>
+                                                    <li>Frontend: <a
+                                                            href="https://github.com/axlserial/miauchat-frontend-agiles.git"
+                                                            target="_blank">miauchat-frontend-agiles</a>.</li>
+                                                    <li>Backend: <a
+                                                            href="https://github.com/axlserial/miauchat-backend-agiles.git"
+                                                            target="_blank">miauchat-backend-agiles</a>.</li>
+                                                </ul>
+                                                </p>
+                                            </li>
+
+                                            <li>Mediante una terminal acceder a la raíz de las carpetas,
+                                                deberá ejecutar el siguiente comando para instalar las dependencias
+                                                necesarias:
+                                                <code>npm install</code>.
+                                            </li>
+
+                                        </ol>
+                                    </div>
+                                </div>
+                                <p id="p-2" class="subtitle is-4">Backend miauchat</p>
+
+
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+
         <footer class="footer has-background-primary-light">
             <div class="content has-text-centered">
                 <p>
@@ -451,8 +702,28 @@
             </div>
         </footer>
     </div>
+    <script>
+        function changeTitle(valor) {
+            if (valor == Number(1)) {
+                document.getElementById("titulo-pagina").innerHTML = "Manual Técnico";
+                document.getElementById("tab-2").classList.add("is-active");
+                document.getElementById("tab-1").classList.remove("is-active");
+
+                document.getElementById("manual_usuario").style.display = "none";
+                document.getElementById("manual_tecnico").style.display = "block";
 
 
+            }
+            else {
+                document.getElementById("titulo-pagina").innerHTML = "Manual de Usuario";
+                document.getElementById("tab-1").classList.add("is-active");
+                document.getElementById("tab-2").classList.remove("is-active");
+
+                document.getElementById("manual_usuario").style.display = "block";
+                document.getElementById("manual_tecnico").style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 
