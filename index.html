@@ -658,30 +658,123 @@
                                             definidas de la siguiente manera.
                                         </p>
                                         <ol>
-                                            <li>Clonar los repositorios:
-                                                <p class="has-text-centered">
-                                                <ul>
-                                                    <li>Frontend: <a
-                                                            href="https://github.com/axlserial/miauchat-frontend-agiles.git"
-                                                            target="_blank">miauchat-frontend-agiles</a>.</li>
-                                                    <li>Backend: <a
-                                                            href="https://github.com/axlserial/miauchat-backend-agiles.git"
-                                                            target="_blank">miauchat-backend-agiles</a>.</li>
-                                                </ul>
-                                                </p>
-                                            </li>
+                                            <li>
+                                                <code>src/</code>: Código fuente del proyecto de cada uno de los
+                                                componentes de las interfaces de usuario, los servicios para la
+                                                comunicación con el servidor y para el manejo de los datos del chat.
 
-                                            <li>Mediante una terminal acceder a la raíz de las carpetas,
-                                                deberá ejecutar el siguiente comando para instalar las dependencias
-                                                necesarias:
-                                                <code>npm install</code>.
                                             </li>
-
+                                            <li>
+                                                <code>src/assets/</code>: Directorio donde se encuentran carpetas de los
+                                                recursos estáticos usados en las interfaces de usuario de la aplicación,
+                                                como son imágenes e iconos.
+                                            </li>
+                                            <li>
+                                                <code>src/components/</code>: Dentro de la carpeta se encuentra cada uno
+                                                de los componentes desarrollados con React para la interfaz del chat.
+                                            </li>
+                                            <li>
+                                                <code>src/pages/</code>: Carpeta donde se encuentran los componentes de
+                                                React de las interfaces de usuario de la aplicación, como lo es la
+                                                interfaz de registro, inicio de sesión y pantalla principal del chat.
+                                            </li>
+                                            <li>
+                                                <code>src/routes/</code>: Archivo en donde se define cada una de las
+                                                rutas de la aplicación que se muestra en la liga al acceder a la
+                                                aplicación con el navegador.
+                                            </li>
+                                            <li>
+                                                <code>src/services/</code>: Archivos que nos proporcionan los servicios
+                                                (API) para establecer la comunicación y poder enviar y recibir datos del
+                                                cliente con el servidor.
+                                            </li>
+                                            <li>
+                                                <code>src/types/</code>: Tipos de datos donde se define el modelo de los
+                                                datos, para contar con los con los atributos correspondientes a los
+                                                campos donde el usuario ingresa información y haya coherencia entre los
+                                                datos que envía el cliente con los datos necesarios solicitados en el
+                                                servidor.
+                                            </li>
+                                            <li>
+                                                <code>src/utils/</code>: Funciones auxiliares.
+                                            </li>
+                                            <li>
+                                                <code>src/App.tsx</code>: Archivo del código fuente del componente
+                                                principal de la aplicación para iniciar sesión en la aplicación.
+                                            </li>
+                                            <li>
+                                                <code>src/index.tsx</code>: Punto de entrada de la aplicación.
+                                            </li>
+                                            <li>
+                                                <code>tests/</code>: Carpeta donde se pueden almacenar los archivos para
+                                                llevar a cabo las pruebas unitarias de la interfaz de usuario para su
+                                                correcto funcionamiento.
+                                            </li>
+                                            <li>
+                                                <code>public/</code>: Archivos estáticos como el favicon para mostrar en
+                                                la aplicación.
+                                            </li>
                                         </ol>
                                     </div>
                                 </div>
                                 <p id="p-2" class="subtitle is-4">Backend miauchat</p>
-
+                                <div class="container pt-5 pb-6">
+                                    <div class="content">
+                                        <p class="has-text-justified">Dentro de esta carpeta se encuentran los archivos
+                                            del backend, desde la conexión de la base de datos, diferentes servicios que
+                                            implementan la funcionalidad lógica de la aplicación, así como de las
+                                            pruebas y están definidas de la siguiente manera.
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                <code>src/</code>: Dentro del directorio se encuentran varias carpetas
+                                                con el código fuente de la aplicación.
+                                            </li>
+                                            <li>
+                                                <code>src/api/</code>: Directorio donde se encuentran varias carpetas con
+                                                la Rest API de la aplicación.
+                                            </li>
+                                            <li>
+                                                <code>src/api/controllers/</code>: Controladores de la API, la parte web
+                                                dónde está el código que recibe y trata las peticiones del cliente.
+                                                Según las acciones del usuario en la web, el controlador solicitará una
+                                                u otra información mediante los servicios a la base de datos.
+                                            </li>
+                                            <li>
+                                                <code>src/api/middlewares/</code>: Middlewares de la API.
+                                            </li>
+                                            <li>
+                                                <code>src/api/routes/</code>: Directorio donde se encuentra una carpeta
+                                                de las rutas de la API de la aplicación, mediante estas rutas se podrá
+                                                comunicar el cliente con el servidor de la aplicación para enviar y
+                                                recibir datos a la base de datos.
+                                            </li>
+                                            <li>
+                                                <code>src/api/services</code>: Servicios de la API, estos servicios hacen
+                                                posible la comunicación a la base de datos mediante consultas SQL para
+                                                la persistencia de los datos.
+                                            </li>
+                                            <li>
+                                                <code>src/api/utils/</code>: Utilidades de la aplicación.
+                                            </li>
+                                            <li>
+                                                <code>src/config/</code>: Archivos de configuración de la aplicación para
+                                                configurar el servidor, la conexión del servidor de socket.io así como
+                                                de la configuración del manejo de la lógica de la gestión de los
+                                                mensajes.
+                                            </li>
+                                            <li>
+                                                <code>src/constants/</code>: Constantes de la aplicación utilizadas para
+                                                el entorno de desarrollo y producción de la aplicación.
+                                            </li>
+                                            <li>
+                                                <code>tests/</code>: Archivos de las pruebas unitarias llevadas a cabo a
+                                                las las rutas de envío y recepción de los datos del servidor para
+                                                comprobar su correcto funcionamiento.
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
