@@ -1,1 +1,1 @@
-# Manual de usuario Miauchat
+# Manual de usuario y técnico Miauchat
